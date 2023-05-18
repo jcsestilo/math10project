@@ -1,0 +1,7 @@
+img[src="assets/canton_tower.png"]{
+    height: 620px;
+    position: absolute;
+    bottom: 0px;
+    left: 260px;
+    z-index: 1;
+}
