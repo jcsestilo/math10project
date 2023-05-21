@@ -131,6 +131,60 @@ header .bottom-border {
 
 .city-wrapper .city-bg {
     position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    filter: blur(1.4px) grayscale(70%);
+}
+
+.city-wrapper .city-b1 {
+    position: absolute;
+    max-width: 8.13%;
+    bottom: 0;
+    left: 25.6%;
+}
+
+.city-wrapper .city-b1:hover {
+    max-width: 8.33%;
+    left: 25.45%;
+    cursor: pointer;
+    filter: hue-rotate(70deg);
+}
+
+.city-wrapper .city-b2 {
+    position: absolute;
+    max-width: 29.4%;
+    bottom: 0;
+    right: 19.98%;
+}
+
+.city-wrapper .city-b2:hover {
+    max-width: 29.8%;
+    right: 19.8%;
+    cursor: pointer;
+    filter: hue-rotate(40deg);
+}
+
+.city-wrapper .city-b3 {
+    position: absolute;
+    max-width: 9.05%;
+    bottom: 0;
+    left: 19.45%;
+}
+
+.city-wrapper .city-b3:hover {
+    max-width: 9.25%;
+    left: 19.3%;
+    cursor: pointer;
+    filter: hue-rotate(-40deg);
+}
+
+
+.city-wrapper .city-b4 {
+    position: absolute;
     max-width: 42%;
     bottom: 0;
     left: 0; 
@@ -139,50 +193,8 @@ header .bottom-border {
     margin-right: auto;
 }
 
-.city-wrapper .city-bg:hover {
+.city-wrapper .city-b4:hover {
     max-width: 43%;
     cursor: pointer;
     filter: hue-rotate(-90deg);
-}
-
-.city-wrapper .city-b1 {
-    position: absolute;
-    max-width: 8.35%;
-    bottom: 0;
-    left: 26.2%;
-}
-
-.city-wrapper .city-b1:hover {
-    max-width: 8.7%;
-    left: 26%;
-    cursor: pointer;
-    filter: hue-rotate(70deg);
-}
-
-.city-wrapper .city-b2 {
-    position: absolute;
-    max-width: 31%;
-    bottom: 0;
-    right: 17.2%;
-}
-
-.city-wrapper .city-b2:hover {
-    max-width: 31.6%;
-    right: 17.05%;
-    cursor: pointer;
-    filter: hue-rotate(40deg);
-}
-
-.city-wrapper .city-b3 {
-    position: absolute;
-    max-width: 8.6%;
-    bottom: 0;
-    left: 19.2%;
-}
-
-.city-wrapper .city-b3:hover {
-    max-width: 8.8%;
-    left: 19.1%;
-    cursor: pointer;
-    filter: hue-rotate(-40deg);
 }
