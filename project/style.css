@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    max-width: 100vw;
+}
+
 h1, h2, h3 {
     font-family: 'poppins';
 }
@@ -13,23 +17,39 @@ p {
     font-family: 'dm sans';
 }
 
+.city-wrapper img {
+    width: 100%;
+}
+
+smlr {
+    font-size: .65em;
+    font-weight: 400;
+    margin-right: .1em;
+}
+
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    margin-top: 0.5em;
-    position: relative;
+    padding: 0.5em 0;
+    width: 100vw;
+    z-index: 6;
 }
 
 header a {
     text-decoration: none;
-    color: #292929;
 }
 
-header a.logo {
+.logo {
     font-weight: 800;
     font-size: 2em;
     font-family: 'poppins';
     margin-left: 5vw;
+    color: #292929;
+}
+
+.invert {
+    color: #f5f5f5;
 }
 
 header nav {
@@ -53,10 +73,11 @@ header nav ul li a {
     letter-spacing: .25em;
     -webkit-transition: color .076s linear;
     transition: color .076s linear;
+    color: #292929;
 }
 
 header nav ul li a:hover {
-    color: #a09d34;
+    color: #c5c5c5;
 }
 
 header .bottom-border {
@@ -64,9 +85,104 @@ header .bottom-border {
     position: absolute;
     left: 5em;
     right: 5em;
-    bottom: -.5em;
+    bottom: 0;
+}
+
+.clr {
+    opacity: 1;
+    background-color: #292929;
+    transition: 300ms ease-in-out;
+}
+
+.none {
+    opacity: 0;
+    color: none;
+    pointer-events: none;
+    transition: 300ms ease-in-out;
+}
+
+.transp {
+    opacity: 1;
+    background: none;
+    transition: 300ms ease-in-out;
 }
 
 .main-wrapper {
-    background-color: #d7d7d7;
+    background-color: #f5f5f5;
+    min-height: 200vh;
+    padding: 0 5em;
+    max-width: 100%;
+}
+
+.hero {
+    padding: 10em 3em 0 3em;
+}
+
+.city-wrapper {
+    position: relative;
+    max-width: 100%;
+    height: 35vw;
+    max-height: 40em;
+}
+
+.city-wrapper >* {
+    transition: 300ms;
+}
+
+.city-wrapper .city-bg {
+    position: absolute;
+    max-width: 42%;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.city-wrapper .city-bg:hover {
+    max-width: 43%;
+    cursor: pointer;
+    filter: hue-rotate(-90deg);
+}
+
+.city-wrapper .city-b1 {
+    position: absolute;
+    max-width: 8.35%;
+    bottom: 0;
+    left: 26.2%;
+}
+
+.city-wrapper .city-b1:hover {
+    max-width: 8.7%;
+    left: 26%;
+    cursor: pointer;
+    filter: hue-rotate(70deg);
+}
+
+.city-wrapper .city-b2 {
+    position: absolute;
+    max-width: 31%;
+    bottom: 0;
+    right: 17.2%;
+}
+
+.city-wrapper .city-b2:hover {
+    max-width: 31.6%;
+    right: 17.05%;
+    cursor: pointer;
+    filter: hue-rotate(40deg);
+}
+
+.city-wrapper .city-b3 {
+    position: absolute;
+    max-width: 8.6%;
+    bottom: 0;
+    left: 19.2%;
+}
+
+.city-wrapper .city-b3:hover {
+    max-width: 8.8%;
+    left: 19.1%;
+    cursor: pointer;
+    filter: hue-rotate(-40deg);
 }
